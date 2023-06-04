@@ -1,0 +1,138 @@
+:root {
+  --dark-color: #19283f;
+  --green-color: #33d1cc;
+  --red-color: #ff3150;
+  --yellow-color: #ffc400;
+  --section-color: #eff7fa;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.navbar {
+  background-color: var(--dark-color);
+}
+
+.search {
+  border-left: 1px solid var(--green-color);
+}
+
+.search svg {
+  color: var(--green-color);
+}
+
+.main_btn {
+  color: var(--yellow-color);
+  background-color: var(--red-color);
+  border: none;
+}
+
+.main_btn:hover {
+  color: var(--yellow-color);
+}
+
+.navbar .nav-link {
+  color: var(--section-color);
+}
+
+.navbar .nav-link.active,
+.navbar .nav-link:hover,
+.navbar .nav-link:focus {
+  color: var(--green-color);
+}
+
+.landing {
+  background-color: var(--dark-color);
+  height: calc(100vh - 70px);
+}
+
+.main-title::after {
+  height: 2px;
+  width: 50px;
+  left: 50%;
+  bottom: -20px;
+  content: "";
+  position: absolute;
+  background-color: var(--green-color);
+  animation-name: linee;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  transform: translateX(-50%);
+}
+
+@keyframes linee {
+  0% {
+    transform: translateX(10px, 0px);
+  }
+}
+
+.icon-holder {
+  height: 200px;
+}
+
+.number {
+  font-size: 12rem;
+  color: var(--section-color);
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.icon {
+  color: var(--green-color);
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.navbar-toggler {
+  color: #fff;
+  border-color: #fff;
+  font-size: 25px;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+.our_work {
+  background-color: var(--section-color);
+}
+
+.our_work .box {
+  padding: 5px;
+  overflow: hidden;
+  position: relative;
+}
+
+.our_work .box:hover:after {
+  position: absolute;
+  height: calc(100% - 10px);
+  width: calc(100% - 10px);
+  content: attr(data-w);
+  background-color: #33d1cc75;
+  bottom: 5px;
+  left: 5px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  transition: 0.3s;
+  font-size: 3rem;
+  /* transform: translateX(100px); */
+}
+
+.our_work .active {
+  color: var(--section-color);
+  background-color: var(--red-color);
+}
+
+.our_work ul li:not(.active):hover {
+  color: var(--red-color);
+}
+
+.stuff .description{
+  max-width: 500px;
+}

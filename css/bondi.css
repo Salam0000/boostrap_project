@@ -121,7 +121,7 @@ body {
   font-weight: bold;
   transition: 0.3s;
   font-size: 3rem;
-  /* transform: translateX(100px); */
+  transform: translateX(0px);
 }
 
 .our_work .active {
@@ -133,6 +133,50 @@ body {
   color: var(--red-color);
 }
 
-.stuff .description{
+.stuff .description {
   max-width: 500px;
+}
+
+.stuff a,
+.our_blog a {
+  width: 45%;
+  padding: 10px;
+  border: var(--green-color) 2px solid;
+}
+
+.our_team h2 {
+  color: var(--yellow-color);
+  font-weight: bold;
+}
+
+.our_team {
+  background-color: var(--section-color);
+}
+
+.our_team .box h2 {
+  background-color: var(--green-color);
+  color: white;
+  padding: 15px;
+}
+
+.our_blog a,
+.start_project a {
+  width: 15%;
+}
+
+.our_blog .box {
+  border: 1px solid var(--section-color);
+}
+
+.start_project {
+  background-color: var(--dark-color);
+  color: white;
+}
+.subscribe{
+  background-color:var(--yellow-color);
+  color: white;
+}
+.subscribe a{
+  background-color: var(--dark-color);
+  width: 15%;
 }
